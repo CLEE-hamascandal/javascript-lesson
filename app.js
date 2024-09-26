@@ -126,3 +126,58 @@ console.log(x + 'を' + y + 'で割った余りは' + remainder(x, y) + 'です�
 // Q10
 
 //変数xはスコープがfooという関数内なので、スコープの外から参照することはできない。よってx is not definedというエラーメッセージが出力される。
+
+
+
+// 応用問題
+// Q1
+console.log('Q1');
+console.log(Math.floor(Math.random() * 10));
+
+
+// Q2
+console.log('Q2');
+let Hello =function() {
+  console.log('Hello World!');
+}
+setTimeout(Hello, 3000);
+
+
+// Q3
+console.log('Q3');
+let num = 0;
+
+if (num === 0) {
+  console.log('num is 0');
+} else if (num > 0) {
+  console.log('num is greater than 0');
+} else {
+  console.log('num is less than 0');
+}
+
+
+// Q4
+console.log('Q4');
+let numbers = [];
+
+for (i = 0; i < 100; i++) {
+  numbers[i] = i;
+}
+console.log(numbers);
+
+
+// Q5
+console.log('Q5');
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+
+for (i = 0; i < mixed.length; i++) {
+  if (typeof mixed[i] != "number") {
+    console.log('not number');
+  } else {
+    if (mixed[i] % 2 === 0) {
+      console.log('even');
+    } else {
+      console.log('odd');
+    }
+  }
+}

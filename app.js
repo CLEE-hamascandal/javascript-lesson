@@ -51,7 +51,7 @@ console.log(playerList[1].favorites[1]);
 // Q5
 console.log('Q5');
 let sum = 0;
-for (i = 0; i < 3; i++) {
+for (i = 0; i < playerList.length; i++) {
   sum += playerList[i].age;
 }
 

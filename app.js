@@ -1,7 +1,7 @@
 // Q1
 console.log('Q1');
 let nickname = '濱崎真樹';
-let age = '28';
+let age = 28;
 
 console.log('私のニックネームは' + nickname + 'です。年齢は' + age + '歳です。');
 

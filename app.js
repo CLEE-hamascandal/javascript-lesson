@@ -137,7 +137,7 @@ console.log(Math.floor(Math.random() * 10));
 
 // Q2
 console.log('Q2');
-let Hello =function() {
+let Hello = function() {
   console.log('Hello World!');
 }
 setTimeout(Hello, 3000);

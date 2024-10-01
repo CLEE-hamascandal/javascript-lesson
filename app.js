@@ -1,6 +1,9 @@
 // Q1
 console.log('Q1');
+// 基本的に値の変更がないものはconstで定義しておく。(動的型付け言語のため)
 let nickname = '濱崎真樹';
+nickname = 100;
+console.log(typeof nickname);
 let age = 28;
 
 console.log('私のニックネームは' + nickname + 'です。年齢は' + age + '歳です。');
@@ -22,7 +25,7 @@ let user = {
   favorite: 'card',
 };
 
-console.log(user.age);
+console.log('user.age => ', user.age);
 
 
 // Q4
@@ -55,7 +58,7 @@ for (i = 0; i < playerList.length; i++) {
   sum += playerList[i].age;
 }
 
-console.log(sum/3);
+console.log(sum/playerList.length);
 
 
 // Q6
@@ -84,6 +87,7 @@ user.sayHello();
 console.log('Q8');
 let calc = {
   add: function(x, y) {
+    // 仮引数
     console.log(x + y);
   },
   subtract: function(x, y) {
@@ -105,7 +109,7 @@ let calc = {
   },
 };
 
-calc.add(3, 4);
+calc.add(3, 4); //実引数
 calc.subtract(15, 5);
 calc.multiply(49, 1);
 calc.divide(35,7);
@@ -171,7 +175,7 @@ console.log('Q5');
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for (i = 0; i < mixed.length; i++) {
-  if (typeof mixed[i] != "number") {
+  if (typeof mixed[i] !== "number") {
     console.log('not number');
   } else {
     if (mixed[i] % 2 === 0) {
